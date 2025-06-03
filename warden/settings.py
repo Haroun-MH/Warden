@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'warden_app',
     'rest_framework',
     'graphene_django',
-    'django_celery_beat', # For Celery Beat (periodic tasks)
+    'django_celery_beat', 
 ]
 
 MIDDLEWARE = [

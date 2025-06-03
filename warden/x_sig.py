@@ -8,10 +8,10 @@ HMAC_SECRET_KEY = 'your-super-secret-hmac-key-here'
 # This should be the EXACT JSON payload you send in Postman
 payload = {
     "timestamp": "2023-10-27T10:00:00Z",
-    "log_level": "ERROR",
-    "message": "An unexpected error occurred service is down, session stopped",
+    "log_level": "info",
+    "message": "session started",
     "source": "backend_service",
-    "raw_log": "2023-10-27T10:00:00Z [ERROR] backend_service: An unexpected error occurred, session stopped"
+    "raw_log": "2023-10-27T10:00:00Z [info] session started"
 }
 
 # Convert payload to a compact JSON string (no extra whitespace)

@@ -29,9 +29,9 @@ This project, inspired by Mr. Chaouki Bayoudhi, is designed for log anomaly dete
    python manage.py runserver
    ```
 
-5. **Start Celery Worker and Beat**
+5. **Start redis-server and Celery Worker and Beat**
    ```bash
-   celery -A warden worker --loglevel=info
+   celery -A warden worker -l info -P eventlet
    celery -A warden beat --loglevel=info
    ```
 
